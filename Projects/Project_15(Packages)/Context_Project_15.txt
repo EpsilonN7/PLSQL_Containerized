@@ -1,0 +1,18 @@
+Write a PL/SQL Anonymous block that uses a package, “ABC” to display information from the “emp” database table. 
+
+The ABC package must contain the following public interface (i.e., package specification):
+
+“DisplayEmpTop10SalariesInReverse” procedure
+Call private procedure “BuildVarrays”
+Creates a for loop to display the names & salaries VARARRAY in reverse order;
+The ABC package body must contain the following private items:
+
+A cursor that retrieves the top ten salaries from the emp table (i.e., must use ROWNUM pseudocolumn)
+2 variable array types & corresponding variables to store the names and salaries for the 10 items retrieved from the cursor
+A procedure BuildVarrays that uses a cursor for loop to create the “names” & “salaries” VARRAYS
+Additional variable as needed to support the ”BuildVarrays” & “DisplayEmpTop10SalariesInReverse” procedures
+Notes:
+
+Use pseudocolumn "ROWNUMLinks to an external site." (refer to "Oracle 12c SQL Reference" documentation) to limit number of salaries to select to 10
+FOR loop syntaxLinks to an external site.
+Use describe command to determine the data type for the "ename" and "sal" fields of the "emp" table

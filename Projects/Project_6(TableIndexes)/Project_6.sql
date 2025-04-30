@@ -1,0 +1,3 @@
+DROP INDEX Bonus_Index;
+
+CREATE INDEX Bonus_Index ON BONUS(SAL);
